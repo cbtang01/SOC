@@ -1,6 +1,6 @@
-# XCS
+# XCS with SOC (self-organized criticality)
 
-*Accuracy-based Learning Classifier Systems for Python 3*
+*For now, this is a complete replication from https://github.com/hosford42/xcs Accuracy-based Learning Classifier Systems for Python 3, but with some modification to the mutation algorithm*
 
 ## Links
 * [Project Home](http://hosford42.github.io/xcs/)
@@ -19,6 +19,12 @@ In its canonical form, XCS accepts a fixed-width string of bits as its input, an
 A key feature of XCS is that, unlike many other machine learning algorithms, it not only learns the optimal input/output mapping, but also produces a minimal set of rules for describing that mapping. This is a big advantage over other learning algorithms such as [neural networks](http://en.wikipedia.org/wiki/Artificial_neural_network) whose models are largely opaque to human analysis, making XCS an important tool in any data scientist's tool belt.
 
 The XCS library provides not only an implementation of the standard XCS algorithm, but a set of interfaces which together constitute a framework for implementing and experimenting with other LCS variants. Future plans for the XCS library include continued expansion of the tool set with additional algorithms, and refinement of the interface to support reinforcement learning algorithms in general.
+
+## Modified files from Mr. Hosford's original code
+xcs.py and xcs_original.py under directory xcs\algorithm; scenarios.py, DARtest.py under directory xcs.
+In xcs.py a new function _action_set_subsumption is added and xcs_original.py is the original xcs.py
+DARtest is our testing program where a selection from a GUI pulldown menu indicates a binary 1, 0 otherwise.
+The complicated GUI code is not presented here, but the design of it is in the doc directory.  The design is for a Petroleum company's community cloud.
 
 ## Related Projects
 * Pier Luca Lanzi's [XCS Library (xcslib)](http://xcslib.sourceforge.net/) (C++)
