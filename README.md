@@ -21,11 +21,11 @@ A key feature of XCS is that, unlike many other machine learning algorithms, it 
 The XCS library provides not only an implementation of the standard XCS algorithm, but a set of interfaces which together constitute a framework for implementing and experimenting with other LCS variants. Future plans for the XCS library include continued expansion of the tool set with additional algorithms, and refinement of the interface to support reinforcement learning algorithms in general.
 
 ## Modified files from Mr. Hosford's original code
-Modified files are: xcs.py and xcs_original.py under directory xcs\algorithm; scenarios.py, DARtest.py under directory xcs.
+Modified files are: xcs.py under directory xcs\algorithm; and scenarios.py, DARtest.py under directory xcs.
 
 In xcs.py a new function _mutate_action（） is added. 
-DARtest.py is our testing program where a selection from a GUI pulldown menu indicates a binary 1, or 0 otherwise.
-(The complicated GUI code is not presented here.)
+DARtest.py is our testing program where a selection from a GUI pulldown menu indicates a binary 1, 0 otherwise, or # if unknown (This is compatible with John H. Holland's convention of complex adaptive system.  For details see his 2012 book "Signals and Boundaries").
+The complicated GUI code is not yet presented here.
 
 ## Related Projects
 * Pier Luca Lanzi's [XCS Library (xcslib)](http://xcslib.sourceforge.net/) (C++)
