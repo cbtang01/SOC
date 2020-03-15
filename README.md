@@ -23,7 +23,7 @@ The XCS library provides not only an implementation of the standard XCS algorith
 ## Modified files from Mr. Hosford's original code
 Modified files are: xcs.py and xcs_original.py under directory xcs\algorithm; scenarios.py, DARtest.py under directory xcs.
 
-In xcs.py a new function _action_set_subsumption is added and xcs_original.py is the original xcs.py. 
+In xcs.py a new function _mutate_action（） is added and xcs_original.py is the original xcs.py. 
 DARtest is our testing program where a selection from a GUI pulldown menu indicates a binary 1, 0 otherwise.
 The complicated GUI code is not presented here.
 
